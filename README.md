@@ -4,4 +4,6 @@ This APK toggles TLC android TVs button sound. This sound is played whenever you
 
 Made for TCL Android TVs but it may support most other Android TVs such as Sony and others
 
+![Screenshot](https://i.imgur.com/CvZ1Qpy.png)
+
 
