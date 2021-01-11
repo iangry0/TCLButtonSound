@@ -1,6 +1,8 @@
 package me.iangry.tclbuttonsound;
 
 import android.app.Activity;
+import android.content.Context;
+import android.media.AudioManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +22,8 @@ public class MainActivity extends Activity {
 
     private Button buttonSum3;
 
+    private Button buttonSum4;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +33,9 @@ public class MainActivity extends Activity {
 
         addListenerOnButton2();
 
-        ExitButton();
+        Method2Button1();
+
+        Method2Button2();
     }
 
     public void addListenerOnButton() {
@@ -68,14 +74,28 @@ public class MainActivity extends Activity {
             }
         });
     }
-    public void ExitButton() {
+    public void Method2Button1() {
         buttonSum3 = (Button) findViewById(R.id.button3);
 
         buttonSum3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
-                System.exit(0);
+                Toast toast = Toast.makeText(getApplicationContext(), "Turned off button move sound effects", Toast.LENGTH_SHORT);
+                toast.setMargin(50, 50);
+                toast.show();
+                AudioManager audioManager = (AudioManager) getApplicationContext().getSystemService(Context.AUDIO_SERVICE);
+                audioManager.adjustStreamVolume(AudioManager.STREAM_NOTIFICATION, AudioManager.ADJUST_LOWER, 0 /*or: AudioManager.FLAG_SHOW_UI*/);
+            }
+        });
+    }
+    public void Method2Button2() {
+        buttonSum4 = (Button) findViewById(R.id.button4);
+
+        buttonSum4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AudioManager audioManager = (AudioManager) getApplicationContext().getSystemService(Context.AUDIO_SERVICE);
+                audioManager.adjustStreamVolume(AudioManager.STREAM_NOTIFICATION, AudioManager.ADJUST_RAISE, 1 /*or: AudioManager.FLAG_SHOW_UI*/);
             }
         });
     }

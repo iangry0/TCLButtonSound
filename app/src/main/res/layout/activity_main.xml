@@ -7,10 +7,7 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 tools:context="me.iangry.tclbuttonsound.MainActivity">
 
-
-
-
-<Button
+    <Button
     android:id="@+id/button"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -29,19 +26,57 @@ tools:context="me.iangry.tclbuttonsound.MainActivity">
     tools:layout_editor_absoluteX="148dp"
     tools:layout_editor_absoluteY="266dp" />
 
-<Button
-    android:id="@+id/button3"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="400dp"
-    android:text="Exit"
-    tools:layout_editor_absoluteX="148dp"
-    tools:layout_editor_absoluteY="266dp" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="340dp"
+        android:text="Turn off button move sound effect"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="266dp" />
 
-<TextView
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="430dp"
+        android:text="Turn on button move sound effect"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="266dp" />
+
+    <TextView
     android:id="@+id/textView"
     android:layout_width="match_parent"
     android:layout_height="59dp"
     android:text="TCL TV Button Move Sound Effect Disabler"
     android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="500dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="-7dp"
+        android:text="Method 1"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="500dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginEnd="5dp"
+        android:text="Method 2 (If #1 doesn't work)"
+        android:textSize="18sp" />
 </RelativeLayout>
