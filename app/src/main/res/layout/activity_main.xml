@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="me.iangry.tclbuttonsound.MainActivity">
+
+
+
+
+<Button
+    android:id="@+id/button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="109dp"
+    android:text="Turn off button move sound effect"
+    tools:layout_editor_absoluteX="148dp"
+    tools:layout_editor_absoluteY="266dp" />
+
+<Button
+    android:id="@+id/button2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="209dp"
+    android:text="Turn on button move sound effect"
+    tools:layout_editor_absoluteX="148dp"
+    tools:layout_editor_absoluteY="266dp" />
+
+<Button
+    android:id="@+id/button3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="400dp"
+    android:text="Exit"
+    tools:layout_editor_absoluteX="148dp"
+    tools:layout_editor_absoluteY="266dp" />
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="59dp"
+    android:text="TCL TV Button Move Sound Effect Disabler"
+    android:textSize="18sp" />
+</RelativeLayout>
